@@ -12,17 +12,19 @@
     <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
 </head>
 <body>
-    <nav>
-        <a href="/">🏠</a>
-        <a href="/">😃</a>
-        <a href="{% url 'election_list' %}">📰</a>
-        <a href="/">🚀</a>
-    </nav>
+    <header class="header">
+        <nav class="nav-bar">
+            <a href="/">🏠</a>
+            <a href="/">😃</a>
+            <a href="{% url 'election_list' %}">📰</a>
+            <a href="/">🚀</a>
+        </nav>
+    </header>
 
     <main>
         {% block content %}
         {% endblock %}
     </main>
-    
+    <footer class="footer"></footer>
 </body>
 </html>
