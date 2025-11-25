@@ -12,7 +12,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ election.title }}</h5>
                 <p class="card-text">{{ election.description }}</p>
-                <a href="{% url 'election_detail' election.id %}" class="btn btn-primary">Read More</a>
+                <a href="{% url 'election_list' election.id %}" class="btn btn-primary">Read More</a>
             </div>
         </div>
     {% empty %}
